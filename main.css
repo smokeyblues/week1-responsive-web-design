@@ -2,6 +2,7 @@
   body {
     background-color: #5E5C6C;
   }
+  
   .nav {
     position: absolute;
     display: block;
@@ -13,17 +14,18 @@
   }
 
   .nav-links {
+    visibility: visible;
     width: 70%;
     margin: 0 auto;
     list-style-type: none;
     margin: auto;
-    align: center;
-    background-color: #5E5C6C;
+    text-align: center;
+/*     background-color: #5E5C6C; */
   }
 
   .nav-links li {
     font-family: sans-serif;
-    float: left;
+    display: inline-block;
     margin-right: 5px;
     padding: 10px 30px 12px 30px;
     height: 100%;
@@ -33,9 +35,18 @@
   .nav-links li:hover {
     background-color: #8D99AE;
   }
+  
+  .menu-icon {
+    visibility: hidden;
+    color: aqua;
+    font-size: 2em;
+    position: absolute;
+    top: 7px;
+    right: 30px;
+  }
 
   .large-img {
-    margin-top: 15px;
+/*     margin-top: 15px; */
     margin-left: 10px;
     padding: 5px 10px 0px 10px;
     float: left;
@@ -47,12 +58,12 @@
     margin-top: 45px;
     background-color: aqua;
     border-radius: 25px;
-    height: 500px;
+    min-height: 600px;
   }
 
   .content {
     position: relative;
-    top: 20px;
+/*     top: 20px; */
     font-family: sans-serif;
     margin: 50px 15px 0px 15px;
     margin-top: 50px;
@@ -68,7 +79,197 @@
     top: 375px;
     margin-left: 25px;
     margin-top: 20px;
-    padding: 50px 0px 0px 5px;
+    padding: 30px 0px 0px 5px;
+  }
+
+  .gallery-img {
+
+  }
+}
+
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+@media (max-width: 960px) {
+    body {
+      background-color: #5E5C6C;
+  }
+  
+    .nav {
+      position: absolute;
+      display: block;
+      top: 0px;
+      left: 0px;
+      background-color: #2B2D42;
+      height: 40px;
+      width: 100%;
+  }
+  
+    .nav-links {
+      visibility: hidden;
+      position: absolute;
+      top: 25px;
+      right: 0px;
+      list-style-type: none;
+      text-align: right;
+      z-index: 50;
+      opacity: 0.75;
+  }
+  
+    .nav-links li {
+      font-family: sans-serif;
+      display: block;
+      margin-right: 5px;
+      padding: 10px 30px 12px 30px;
+      height: 100%;
+      color: aqua;
+      background-color: #EF233C;
+      border-bottom: solid 1px;
+      border-bottom-color: #D90429;
+      opacity: 1.0;
+
+  }
+  
+    .nav-links li:hover {
+      background-color: #8D99AE;
+  }
+  
+    .menu-icon {
+    visibility: default;
+    color: aqua;
+    font-size: 2em;
+    position: absolute;
+    top: 7px;
+    right: 30px;
+  }
+  
+    .large-img {
+      margin-top: 15px;
+      margin-left: 10px;
+      padding: 5px 10px 0px 10px;
+      float: left;
+      width: 375px;
+      height: 375px;
+  }
+  
+  .main-content {
+    margin-top: 45px;
+    background-color: aqua;
+    border-radius: 25px;
+    min-height: 500px;
+  }
+  
+    .content {
+      position: relative;
+/*       top: 20px; */
+      bottom: 0px;
+      font-family: sans-serif;
+      margin: 50px 15px 0px 15px;
+      overflow: hidden;
+      padding: 0px;
+  }
+  
+  .gallery {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 375px;
+    margin-left: 25px;
+    margin-top: 20px;
+    padding: 30px 0px 0px 5px;
+  }
+
+  .gallery-img {
+
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+      background-color: #5E5C6C;
+  }
+  
+    .nav {
+      position: absolute;
+      display: block;
+      top: 0px;
+      left: 0px;
+      background-color: #2B2D42;
+      height: 40px;
+      width: 100%;
+  }
+  
+    .nav-links {
+      visibility: hidden;
+      position: absolute;
+      top: 25px;
+      right: 0px;
+      list-style-type: none;
+      text-align: right;
+      z-index: 50;
+      opacity: 0.75;
+  }
+  
+    .nav-links li {
+      font-family: sans-serif;
+      display: block;
+      margin-right: 5px;
+      padding: 10px 30px 12px 30px;
+      height: 100%;
+      color: aqua;
+      background-color: #EF233C;
+      border-bottom: solid 1px;
+      border-bottom-color: #D90429;
+      opacity: 1.0;
+
+  }
+  
+    .nav-links li:hover {
+      background-color: #8D99AE;
+  }
+  
+    .menu-icon {
+    visibility: default;
+    color: aqua;
+    font-size: 2em;
+    position: absolute;
+    top: 7px;
+    right: 30px;
+  }
+  
+    .large-img {
+      margin-top: 25px;
+      margin-left: 10px;
+      padding: 5px 10px 0px 10px;
+      float: none;
+      width: 375px;
+      height: 375px;
+  }
+  
+  .main-content {
+    margin-top: 45px;
+    background-color: aqua;
+    border-radius: 25px;
+    min-height: 875px;
+  }
+  
+    .content {
+      position: relative;
+      top: 70px;
+      font-family: sans-serif;
+      margin: 0px 15px 0px 15px;
+      overflow: auto;
+      padding: 0px;
+  }
+  
+  .gallery {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 375px;
+    margin-left: 25px;
+    margin-top: 20px;
+    padding: 30px 0px 0px 5px;
   }
 
   .gallery-img {

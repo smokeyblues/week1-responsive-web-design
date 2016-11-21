@@ -2,6 +2,20 @@
 <html>
   <head>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <script>
+      function showMenuItems() {
+        var menu = document.querySelector(".nav-links");
+        if (document.body.clientWidth < 959) {
+          if (menu.style.visibility == "hidden") {
+            menu.style.visibility ="visible";
+        } else {
+            menu.style.visibility = "hidden";
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <div class="nav">
@@ -12,26 +26,26 @@
         <a href="#"><li>Contact</li></a>
         <a href="#"><li>Sports</li></a>
       </ul>
+      <a href="#"><i class="material-icons menu-icon" onclick="showMenuItems()">menu</i></a>
     </div>
-       <div>
+       <div class="main-content">
         <div class="large-img">
           <img src="http://placehold.it/350x350" alt="">
         </div>
-        <div class="main-content">
+         <div class="gallery">
+          <img src="http://placehold.it/75x75" alt="" class="gallery-img">
+          <img src="http://placehold.it/75x75" alt="" class="gallery-img">
+          <img src="http://placehold.it/75x75" alt="" class="gallery-img">
+          <img src="http://placehold.it/75x75" alt="" class="gallery-img">
+        </div>
     <!-- start slipsum code -->
+         <div class="content">
+           <p>Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'? </p>
+          <p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass. </p>
+          <p>Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'? </p>
 
-    <p class="content">Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'? </p>
-    <p class="content">Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass. </p>
-    <p class="content">Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'? </p>
-
-    <!-- end slipsum code -->
-                  <div class="gallery">
-        <img src="http://placehold.it/75x75" alt="" class="gallery-img">
-        <img src="http://placehold.it/75x75" alt="" class="gallery-img">
-        <img src="http://placehold.it/75x75" alt="" class="gallery-img">
-        <img src="http://placehold.it/75x75" alt="" class="gallery-img">
-        </div>
-        </div>
+        <!-- end slipsum code -->
+         </div>
       </div>
   </body>
 </html>

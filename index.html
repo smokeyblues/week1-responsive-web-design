@@ -19,22 +19,20 @@
       }
     </script>
     
-    <script>
-      var menu = document.querySelector(".nav-links");
-      
-          $(window).resize(function(){
-            
-            if ( $(window).width() > 960 ) {
-              $(document).ready(function(){
-                document.querySelector(".nav-links").style.visibility = "visible";
-              });
-            }
-            if ( $(window).width() < 959 ) {
-              $(document).ready(function() {
-                document.querySelector(".nav-links").style.visibility = "hidden";
-              });
-            }
+    <script>      
+      $(window).resize(function(){
+
+        if ( $(window).width() > 960 ) {
+          $(document).ready(function(){
+            document.querySelector(".nav-links").style.visibility = "visible";
           });
+        }
+        if ( $(window).width() < 959 ) {
+          $(document).ready(function() {
+            document.querySelector(".nav-links").style.visibility = "hidden";
+          });
+        }
+      });
               
     </script>
   </head>
